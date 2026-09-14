@@ -3,14 +3,14 @@
 using namespace std;
 int main()
 {
-    // 1 пункт
+    // 0 пункт
 
     cout<<"Размер целочисленного типа(int): "<<sizeof(int)<<endl;
     cout<<"Размер типа с плавающей запятой(float): "<<sizeof(float)<<endl;
     cout<<"Размера типа с плавающей запятой(double): "<<sizeof(double)<<endl;
     cout<<"Размер булевого типа(bool): "<<sizeof(bool)<<endl;
     cout<<"Размер символьного типа(char): "<<sizeof(char)<<endl<<endl;
-    
+    cout<<"чтото";
     // 2 пункт(преобразование типов)
     
     typedef unsigned long long int ULLINT;
