@@ -20,7 +20,7 @@ int main()
 
 	for (double x = xstart; x <= xstop; x += step)
 	{
-		double term = x;
+		double temp = x;
 		double sum = x;
 		int n = 1;
 
@@ -28,10 +28,10 @@ int main()
 		{ // чтобы убрать погрешность нуля
 			x = 0.0;
 		}
-		while (abs(term) > accuracy)
+		while (abs(temp) > accuracy)
 		{
-			term = term * (x * x * (2 * n - 1) * (2 * n - 1)) / ((2 * n) * (2 * n + 1));
-			sum += term;
+			temp = temp * (x * x * (2 * n - 1) * (2 * n - 1)) / ((2 * n) * (2 * n + 1));
+			sum += temp;
 			n++;
 		}
 		cout << fixed << setprecision(6);
